@@ -6,7 +6,14 @@ export const metadata: Metadata = {
   description:
     'Herramienta de formulación de cera, carga de fragancia y costeo financiero para cereros y artesanos. Sin registros, sin botones y con cero pérdidas.',
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      {
+        url: '/deus_ex_umbra.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    shortcut: '/deus_ex_umbra.svg',
+    apple: '/deus_ex_umbra.svg',
   },
 };
 
