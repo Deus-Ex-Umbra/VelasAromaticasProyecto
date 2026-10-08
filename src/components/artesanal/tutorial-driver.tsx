@@ -12,6 +12,11 @@ interface TutorialDriverProps {
 
 export function TutorialDriver({ className }: TutorialDriverProps) {
   const iniciarTutorial = React.useCallback(() => {
+    // Asegurar que el acordeón de costos indirectos esté abierto
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new CustomEvent('abrir-acordeon-indirectos'));
+    }
+
     const guia = driver({
       showProgress: true,
       animate: true,
@@ -73,11 +78,41 @@ export function TutorialDriver({ className }: TutorialDriverProps) {
           },
         },
         {
+          element: '#tutorial-envase',
+          popover: {
+            title: '6. Envase y Pabilo (Mecha)',
+            description:
+              'Ingresa el costo del frasco, vaso o lata y de la mecha con su ojalillo. Son costos directos indispensables en cada vela terminada.',
+            side: 'right',
+            align: 'start',
+          },
+        },
+        {
           element: '#tutorial-indirectos',
           popover: {
-            title: '6. Costos Ocultos e Indirectos (Cero Pérdidas)',
+            title: '7. Costos Ocultos e Indirectos',
             description:
-              'Despliega este bloque para incluir cajas, bolsas kraft, etiquetas, energía, mano de obra artesanal y cobro por QR/pasarela.',
+              'Empaque (cajas, viruta), etiquetas de seguridad, energía de fundición y mano de obra artesanal. Esenciales para no trabajar a pérdida.',
+            side: 'top',
+            align: 'start',
+          },
+        },
+        {
+          element: '#tutorial-merma',
+          popover: {
+            title: '8. Merma Técnica (% Opcional - Acepta 0%)',
+            description:
+              '<strong>¿Por qué la merma es pérdida?</strong> Al fundir cera y medir aromas, siempre queda un residuo pegado en las jarras, espátulas y pipetas (del 2% al 5%). Si compras 1 kg de cera, en la realidad no obtienes 1.000 g netos de velas.<br><br><strong>¿Cómo tomarla?</strong> Como un pequeño seguro (2% a 3%) para que esa cera residual no salga de tu ganancia. Si reutilizas tus restos o no la manejas, <strong>déjala en 0%</strong>.',
+            side: 'top',
+            align: 'start',
+          },
+        },
+        {
+          element: '#tutorial-comision',
+          popover: {
+            title: '9. Comisión QR / Pasarela (% Opcional - Acepta 0%)',
+            description:
+              '<strong>¿Por qué acepta 0%?</strong> Si cobras en efectivo o por transferencia bancaria directa sin recargo, se queda en <strong>0%</strong>.<br><br><strong>¿Cuándo usarla?</strong> Si cobras mediante tarjeta, terminal POS o pasarelas digitales que descuentan comisión (ej. 2% al 5%), este campo protege tu precio para que el banco descuente su parte sin tocar tu ganancia real.',
             side: 'top',
             align: 'start',
           },
@@ -85,7 +120,7 @@ export function TutorialDriver({ className }: TutorialDriverProps) {
         {
           element: '#tutorial-margen',
           popover: {
-            title: '7. Margen de Beneficio Real sobre Venta',
+            title: '10. Margen de Beneficio Real sobre Venta',
             description:
               'Elige tramos estratégicos (Supervivencia 35%, Mayorista 50%, Retail 65%, Boutique 80%). Calculamos sobre el precio final, garantizando que nunca pierdas dinero.',
             side: 'top',
@@ -95,7 +130,7 @@ export function TutorialDriver({ className }: TutorialDriverProps) {
         {
           element: '#tutorial-resultados',
           popover: {
-            title: '8. Panel de Resultados y Cotización',
+            title: '11. Panel de Resultados y Cotización',
             description:
               'Tarjeta viva con luz ámbar interactiva, contador amortiguado a 60 FPS, desglose visual y un botón para copiar la cotización limpia directo a WhatsApp.',
             side: 'left',

@@ -30,9 +30,22 @@ export function AcordeonIndirectos({
   monedaSimbolo = 'Bs',
   monedaLocale = 'es-BO',
 }: AcordeonIndirectosProps) {
+  const [valorAcordeon, setValorAcordeon] = React.useState<string | undefined>('indirectos');
+
+  React.useEffect(() => {
+    const alAbrir = () => setValorAcordeon('indirectos');
+    window.addEventListener('abrir-acordeon-indirectos', alAbrir);
+    return () => window.removeEventListener('abrir-acordeon-indirectos', alAbrir);
+  }, []);
+
   return (
     <div id="tutorial-indirectos" className="rounded-3xl border border-artesanal-borde bg-artesanal-tarjeta backdrop-blur-sm p-2 sm:p-4 shadow-sm">
-      <Accordion type="single" collapsible defaultValue="indirectos">
+      <Accordion
+        type="single"
+        collapsible
+        value={valorAcordeon}
+        onValueChange={setValorAcordeon}
+      >
         <AccordionItem value="indirectos" className="border-none">
           <AccordionTrigger className="hover:no-underline py-2 px-2">
             <div className="flex items-center gap-3">
@@ -129,10 +142,15 @@ export function AcordeonIndirectos({
                 />
               </div>
 
-              <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-artesanal-piedra mb-1.5">
-                  Merma técnica / flete insumos (%)
-                </label>
+              <div id="tutorial-merma" className="rounded-2xl p-3 bg-artesanal-fondo/50 border border-artesanal-borde/70 space-y-1.5 transition-all hover:border-artesanal-ambar-400/60">
+                <div className="flex items-center justify-between">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-artesanal-piedra">
+                    Merma técnica / flete (%)
+                  </label>
+                  <span className="text-[10px] font-semibold text-artesanal-piedra/80 bg-artesanal-borde/60 px-2 py-0.5 rounded-full">
+                    Acepta 0% • Opcional
+                  </span>
+                </div>
                 <Input
                   type="number"
                   min="0"
@@ -145,12 +163,20 @@ export function AcordeonIndirectos({
                   }
                   placeholder="0%"
                 />
+                <p className="text-[11px] text-artesanal-piedra leading-snug">
+                  Cera pegada en jarra, pipetas o derrames. Pon <strong>2% a 3%</strong> como seguro contra pérdidas, o <strong>0%</strong> si reutilizas todo.
+                </p>
               </div>
 
-              <div>
-                <label className="block text-xs font-semibold uppercase tracking-wider text-artesanal-piedra mb-1.5">
-                  Comisión QR / Pasarela / Venta (%)
-                </label>
+              <div id="tutorial-comision" className="rounded-2xl p-3 bg-artesanal-fondo/50 border border-artesanal-borde/70 space-y-1.5 transition-all hover:border-artesanal-ambar-400/60">
+                <div className="flex items-center justify-between">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-artesanal-piedra">
+                    Comisión QR / Pasarela (%)
+                  </label>
+                  <span className="text-[10px] font-semibold text-artesanal-piedra/80 bg-artesanal-borde/60 px-2 py-0.5 rounded-full">
+                    Acepta 0% • Opcional
+                  </span>
+                </div>
                 <Input
                   type="number"
                   min="0"
@@ -163,6 +189,9 @@ export function AcordeonIndirectos({
                   }
                   placeholder="0%"
                 />
+                <p className="text-[11px] text-artesanal-piedra leading-snug">
+                  Pon <strong>0%</strong> para cobro en efectivo o transferencias sin recargo. Si usas tarjeta, POS o pasarela con comisión, anótala aquí.
+                </p>
               </div>
             </div>
 
