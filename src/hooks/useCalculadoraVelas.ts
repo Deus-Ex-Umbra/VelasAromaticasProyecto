@@ -16,7 +16,7 @@ import {
 } from '@/lib/motor-costos';
 import { dispararRafagaCelebracion } from '@/components/artesanal/rafaga-celebracion';
 
-const CLAVE_ALMACENAMIENTO_LOCAL = 'calculadora_velas_artesanal_v1';
+const CLAVE_ALMACENAMIENTO_LOCAL = 'calculadora_velas_artesanal_v2';
 
 export function useCalculadoraVelas() {
   const [insumos, setInsumos] = React.useState<InsumosDirectos>(VALORES_DEFECTO_INSUMOS);
@@ -24,9 +24,10 @@ export function useCalculadoraVelas() {
   const [configuracion, setConfiguracion] = React.useState<ConfiguracionVela>(VALORES_DEFECTO_CONFIGURACION);
   const [inicializado, setInicializado] = React.useState(false);
 
-  // Carga inicial desde localStorage
+  // Carga inicial desde localStorage (persistencia de datos calculados anteriores)
   React.useEffect(() => {
     try {
+      localStorage.removeItem('calculadora_velas_artesanal_v1');
       const guardado = localStorage.getItem(CLAVE_ALMACENAMIENTO_LOCAL);
       if (guardado) {
         const datos = JSON.parse(guardado);

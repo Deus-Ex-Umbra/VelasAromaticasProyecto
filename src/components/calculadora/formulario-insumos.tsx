@@ -101,7 +101,7 @@ export function FormularioInsumos({
                 sufijo="/kg"
                 value={insumos.costo_kilo_cera || ''}
                 onChange={(e) => alCambiarInsumo('costo_kilo_cera', parseFloat(e.target.value) || 0)}
-                placeholder="55"
+                placeholder="0.00"
               />
             </div>
             <div>
@@ -109,7 +109,7 @@ export function FormularioInsumos({
                 etiqueta="Cera requerida por vela"
                 valor={insumos.gramos_cera_por_vela}
                 alCambiar={(nuevoGramos) => alCambiarInsumo('gramos_cera_por_vela', nuevoGramos)}
-                min={10}
+                min={0}
                 max={1500}
                 paso={10}
                 sufijo="g"
@@ -152,7 +152,7 @@ export function FormularioInsumos({
                 prefijo={monedaSimbolo}
                 value={insumos.costo_frasco_esencia || ''}
                 onChange={(e) => alCambiarInsumo('costo_frasco_esencia', parseFloat(e.target.value) || 0)}
-                placeholder="70"
+                placeholder="0.00"
               />
             </div>
             <div>
@@ -166,7 +166,7 @@ export function FormularioInsumos({
                 sufijo="g / ml"
                 value={insumos.gramos_frasco_esencia || ''}
                 onChange={(e) => alCambiarInsumo('gramos_frasco_esencia', parseFloat(e.target.value) || 0)}
-                placeholder="100"
+                placeholder="0"
               />
             </div>
           </div>
@@ -190,8 +190,8 @@ export function FormularioInsumos({
             <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
               <div className="sm:col-span-8">
                 <Slider
-                  min={4}
-                  max={12}
+                  min={0}
+                  max={15}
                   step={0.5}
                   value={[insumos.porcentaje_esencia]}
                   onValueChange={([val]) => alCambiarInsumo('porcentaje_esencia', val)}
@@ -201,8 +201,8 @@ export function FormularioInsumos({
                 <ControlPaso
                   valor={insumos.porcentaje_esencia}
                   alCambiar={(nuevoPorcentaje) => alCambiarInsumo('porcentaje_esencia', nuevoPorcentaje)}
-                  min={4}
-                  max={12}
+                  min={0}
+                  max={15}
                   paso={0.5}
                   sufijo="%"
                 />
@@ -251,7 +251,7 @@ export function FormularioInsumos({
                 prefijo={monedaSimbolo}
                 value={insumos.costo_contenedor_unitario || ''}
                 onChange={(e) => alCambiarInsumo('costo_contenedor_unitario', parseFloat(e.target.value) || 0)}
-                placeholder="10"
+                placeholder="0.00"
               />
             </div>
             <div>
@@ -265,7 +265,7 @@ export function FormularioInsumos({
                 prefijo={monedaSimbolo}
                 value={insumos.costo_pabilo_unitario || ''}
                 onChange={(e) => alCambiarInsumo('costo_pabilo_unitario', parseFloat(e.target.value) || 0)}
-                placeholder="1.5"
+                placeholder="0.00"
               />
             </div>
           </div>

@@ -19,7 +19,7 @@ interface ControlPasoProps {
 export function ControlPaso({
   valor,
   alCambiar,
-  min = 1,
+  min = 0,
   max = 1000,
   paso = 1,
   sufijo = '',
@@ -72,7 +72,8 @@ export function ControlPaso({
             min={min}
             max={max}
             step={paso}
-            className="w-full bg-transparent font-mono text-center text-sm font-bold text-artesanal-carbon focus:outline-none"
+            placeholder="0"
+            className="w-full bg-transparent font-mono text-center text-sm font-bold text-artesanal-carbon focus:outline-none placeholder:text-artesanal-piedra/40"
           />
           {sufijo && (
             <span className="text-xs font-medium text-artesanal-piedra select-none pointer-events-none ml-1">

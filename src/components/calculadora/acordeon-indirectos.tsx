@@ -74,7 +74,7 @@ export function AcordeonIndirectos({
                   onChange={(e) =>
                     alCambiarIndirecto('costo_empaque_unitario', parseFloat(e.target.value) || 0)
                   }
-                  placeholder="3.5"
+                  placeholder="0.00"
                 />
               </div>
 
@@ -91,7 +91,7 @@ export function AcordeonIndirectos({
                   onChange={(e) =>
                     alCambiarIndirecto('costo_etiquetas_unitario', parseFloat(e.target.value) || 0)
                   }
-                  placeholder="1.5"
+                  placeholder="0.00"
                 />
               </div>
 
@@ -108,7 +108,7 @@ export function AcordeonIndirectos({
                   onChange={(e) =>
                     alCambiarIndirecto('servicios_energia_unitario', parseFloat(e.target.value) || 0)
                   }
-                  placeholder="1"
+                  placeholder="0.00"
                 />
               </div>
 
@@ -125,7 +125,7 @@ export function AcordeonIndirectos({
                   onChange={(e) =>
                     alCambiarIndirecto('mano_obra_unitaria', parseFloat(e.target.value) || 0)
                   }
-                  placeholder="5"
+                  placeholder="0.00"
                 />
               </div>
 
@@ -143,7 +143,7 @@ export function AcordeonIndirectos({
                   onChange={(e) =>
                     alCambiarIndirecto('porcentaje_merma', parseFloat(e.target.value) || 0)
                   }
-                  placeholder="2.5"
+                  placeholder="0%"
                 />
               </div>
 
@@ -161,7 +161,7 @@ export function AcordeonIndirectos({
                   onChange={(e) =>
                     alCambiarIndirecto('porcentaje_comision_pasarela', parseFloat(e.target.value) || 0)
                   }
-                  placeholder="2.0"
+                  placeholder="0%"
                 />
               </div>
             </div>

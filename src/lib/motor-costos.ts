@@ -40,30 +40,30 @@ export const TRAMOS_MARGEN_PREDEFINIDOS: TramoMargen[] = [
   },
 ];
 
-// Valores por defecto contextualizados al mercado de Bolivia (en Bolivianos Bs)
+// Valores por defecto: todos los campos vacíos (0) para cálculo inicial limpio
 export const VALORES_DEFECTO_INSUMOS: InsumosDirectos = {
-  costo_kilo_cera: 55,       // Bs 55 por kilo de cera de soja estándar en Bolivia
-  gramos_cera_por_vela: 200, // 200 gramos para vaso estándar
-  costo_frasco_esencia: 70,  // Bs 70 el frasco comercial de 100g de fragancia
-  gramos_frasco_esencia: 100,// 100 gramos/ml
-  porcentaje_esencia: 8,     // 8% de carga aromática estándar
-  costo_pabilo_unitario: 1.5,// Bs 1.50 mecha con ojalillo metálico
-  costo_contenedor_unitario: 10, // Bs 10.00 frasco de vidrio ámbar / vaso cerámico
+  costo_kilo_cera: 0,
+  gramos_cera_por_vela: 0,
+  costo_frasco_esencia: 0,
+  gramos_frasco_esencia: 0,
+  porcentaje_esencia: 0,
+  costo_pabilo_unitario: 0,
+  costo_contenedor_unitario: 0,
 };
 
 export const VALORES_DEFECTO_INDIRECTOS: CostosIndirectos = {
-  costo_empaque_unitario: 3.5, // Bs 3.50 caja kraft individual / bolsa
-  costo_etiquetas_unitario: 1.5, // Bs 1.50 etiqueta vinil de diseño + advertencia
-  servicios_energia_unitario: 1.0, // Bs 1.00 gas / electricidad para fundido
-  mano_obra_unitaria: 5.0, // Bs 5.00 tiempo y curado por vela
-  porcentaje_merma: 2.5, // 2.5% merma técnica de vertido y flete
-  porcentaje_comision_pasarela: 2.0, // 2.0% cobro por QR / pasarela de pago
+  costo_empaque_unitario: 0,
+  costo_etiquetas_unitario: 0,
+  servicios_energia_unitario: 0,
+  mano_obra_unitaria: 0,
+  porcentaje_merma: 0,
+  porcentaje_comision_pasarela: 0,
 };
 
 export const VALORES_DEFECTO_CONFIGURACION: ConfiguracionVela = {
   cantidad_lote: 12,
   margen_beneficio_porcentaje: 60,
-  volumen_contenedor_ml: 232,
+  volumen_contenedor_ml: 0,
 };
 
 /**

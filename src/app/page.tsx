@@ -19,7 +19,7 @@ import { ControlPaso } from '@/components/ui/control-paso';
 import { MarcaAguaAutor } from '@/components/artesanal/marca-agua-autor';
 import { TutorialDriver } from '@/components/artesanal/tutorial-driver';
 import { formatearMoneda } from '@/lib/motor-costos';
-import { Flame, TrendingUp, DollarSign } from 'lucide-react';
+import { Flame, TrendingUp, DollarSign, RotateCcw } from 'lucide-react';
 
 export default function PaginaPrincipal() {
   const {
@@ -89,6 +89,17 @@ export default function PaginaPrincipal() {
 
           {/* Tutorial guiado paso a paso con Driver.js */}
           <TutorialDriver />
+
+          {/* Botón para limpiar campos */}
+          <button
+            type="button"
+            onClick={restablecerValoresPorDefecto}
+            title="Limpiar todos los campos"
+            className="flex items-center gap-1.5 rounded-full border border-artesanal-borde bg-artesanal-tarjeta px-3 py-1.5 text-xs font-semibold text-artesanal-piedra hover:text-artesanal-carbon hover:border-artesanal-verde-500 shadow-xs transition-colors"
+          >
+            <RotateCcw className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Limpiar</span>
+          </button>
         </div>
       </header>
 
