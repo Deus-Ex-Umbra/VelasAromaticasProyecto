@@ -19,7 +19,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <input
           type={type}
           className={cn(
-            'flex h-11 w-full rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta px-3.5 py-2 text-sm text-artesanal-carbon shadow-sm transition-all duration-200 placeholder:text-artesanal-piedra/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-artesanal-verde-500 focus-visible:border-artesanal-verde-500/40 disabled:cursor-not-allowed disabled:opacity-50',
+            'flex h-11 w-full rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta px-3.5 py-2 text-sm text-artesanal-carbon shadow-sm transition-all duration-200 placeholder:text-artesanal-piedra/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-artesanal-ambar-500 focus-visible:border-artesanal-ambar-500/40 disabled:cursor-not-allowed disabled:opacity-50',
             prefijo && 'pl-8',
             sufijo && 'pr-12',
             className

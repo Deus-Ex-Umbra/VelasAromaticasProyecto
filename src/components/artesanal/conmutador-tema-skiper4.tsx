@@ -54,11 +54,11 @@ export function ConmutadorTemaSkiper4({ className }: ConmutadorTemaSkiper4Props)
       whileTap={{ scale: 0.92 }}
       transition={{ type: 'spring', stiffness: 400, damping: 25 }}
       className={cn(
-        'group relative flex h-9 w-9 items-center justify-center rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta text-artesanal-carbon shadow-xs transition-colors duration-200 hover:border-artesanal-verde-400 hover:text-artesanal-verde-700 dark:hover:text-artesanal-verde-300 focus:outline-none',
+        'group relative flex h-9 w-9 items-center justify-center rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta text-artesanal-carbon shadow-xs transition-colors duration-200 hover:border-artesanal-ambar-400 hover:text-artesanal-ambar-700 dark:hover:text-artesanal-ambar-300 focus:outline-none',
         className
       )}
-      aria-label={esOscuro ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-      title={esOscuro ? 'Modo Bosque Nocturno activo (clic para claro)' : 'Modo Botánico Claro activo (clic para oscuro)'}
+      aria-label={esOscuro ? 'Cambiar a modo cera clara' : 'Cambiar a modo cera nocturna'}
+      title={esOscuro ? 'Modo Cera Nocturna activo (clic para cera clara)' : 'Modo Cera Soja Marfil activo (clic para cera nocturna)'}
     >
       <AnimatePresence mode="wait" initial={false}>
         {esOscuro ? (

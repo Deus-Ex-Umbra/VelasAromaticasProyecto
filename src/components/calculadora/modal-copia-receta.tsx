@@ -78,11 +78,11 @@ export function ModalCopiaReceta({
         <button
           type="button"
           onClick={manejarCopiar}
-          className="inline-flex items-center gap-1.5 rounded-xl bg-artesanal-carbon px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-artesanal-verde-600 active:scale-95"
+          className="inline-flex items-center gap-1.5 rounded-xl bg-artesanal-carbon px-3.5 py-1.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-artesanal-ambar-600 active:scale-95"
         >
           {copiado ? (
             <>
-              <Check className="h-3.5 w-3.5 text-emerald-400" />
+              <Check className="h-3.5 w-3.5 text-amber-300" />
               <span>¡Copiado al portapapeles!</span>
             </>
           ) : (
@@ -94,7 +94,7 @@ export function ModalCopiaReceta({
         </button>
       </div>
 
-      <pre className="max-h-36 overflow-y-auto rounded-2xl border border-artesanal-borde bg-artesanal-verde-50/50 dark:bg-artesanal-verde-950/20 p-3 text-[11px] font-mono text-artesanal-carbon leading-relaxed whitespace-pre-wrap select-all">
+      <pre className="max-h-36 overflow-y-auto rounded-2xl border border-artesanal-borde bg-artesanal-ambar-50/50 dark:bg-artesanal-ambar-950/20 p-3 text-[11px] font-mono text-artesanal-carbon leading-relaxed whitespace-pre-wrap select-all">
         {textoCotizacion}
       </pre>
     </div>

@@ -13,7 +13,7 @@ export function Badge({
   const estilosVariante = {
     default: 'bg-artesanal-carbon text-white hover:bg-artesanal-carbon/90',
     secundario: 'bg-artesanal-borde/70 text-artesanal-carbon hover:bg-artesanal-borde',
-    salvia: 'bg-artesanal-salvia-claro text-artesanal-salvia-oscuro border border-emerald-300',
+    salvia: 'bg-artesanal-ambar-100 text-artesanal-ambar-800 border border-amber-300',
     ambar: 'bg-artesanal-ambar-100 text-artesanal-ambar-800 border border-amber-300',
     peligro: 'bg-red-50 text-red-700 border border-red-200',
   };

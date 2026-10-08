@@ -35,9 +35,9 @@ export function TutorialDriver({ className }: TutorialDriverProps) {
         {
           element: '#tutorial-tema',
           popover: {
-            title: '2. Modo Claro y Bosque Nocturno',
+            title: '2. Cera Soja Marfil y Cera Nocturna',
             description:
-              'Botón interactivo con física de resortes (Skiper4) para trabajar con comodidad en cualquier iluminación de tu taller.',
+              'Botón interactivo con física de resortes (Skiper4) para alternar entre el tono marfil de cera de soja y la calidez tenue nocturna.',
             side: 'bottom',
             align: 'end',
           },
@@ -113,12 +113,12 @@ export function TutorialDriver({ className }: TutorialDriverProps) {
       type="button"
       onClick={iniciarTutorial}
       className={cn(
-        'inline-flex items-center gap-2 rounded-2xl border border-artesanal-verde-300/80 bg-artesanal-verde-50 px-3.5 py-2 text-xs font-semibold text-artesanal-verde-900 shadow-xs transition-all hover:bg-artesanal-verde-100 hover:border-artesanal-verde-500 active:scale-95 dark:bg-artesanal-verde-950/60 dark:border-artesanal-verde-800 dark:text-artesanal-verde-200 dark:hover:bg-artesanal-verde-900/60',
+        'inline-flex items-center gap-2 rounded-2xl border border-artesanal-ambar-300/80 bg-artesanal-ambar-50 px-3.5 py-2 text-xs font-semibold text-artesanal-ambar-900 shadow-xs transition-all hover:bg-artesanal-ambar-100 hover:border-artesanal-ambar-500 active:scale-95 dark:bg-artesanal-ambar-950/60 dark:border-artesanal-ambar-800 dark:text-artesanal-ambar-200 dark:hover:bg-artesanal-ambar-900/60',
         className
       )}
       title="Iniciar recorrido guiado de la calculadora"
     >
-      <HelpCircle className="h-4 w-4 text-artesanal-verde-700 dark:text-artesanal-verde-300" />
+      <HelpCircle className="h-4 w-4 text-artesanal-ambar-700 dark:text-artesanal-ambar-300" />
       <span>Tutorial Guiado</span>
     </button>
   );

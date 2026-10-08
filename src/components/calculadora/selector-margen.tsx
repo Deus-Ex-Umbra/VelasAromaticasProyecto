@@ -32,7 +32,7 @@ export function SelectorMargen({
       </div>
 
       {/* Slider y Stepper con + y - */}
-      <div className="space-y-3 rounded-2xl bg-artesanal-verde-50/50 dark:bg-artesanal-verde-950/20 p-4 border border-artesanal-borde">
+      <div className="space-y-3 rounded-2xl bg-artesanal-ambar-50/50 dark:bg-artesanal-ambar-950/20 p-4 border border-artesanal-borde">
         <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
           <div className="sm:col-span-7 space-y-1.5">
             <span className="text-xs font-semibold uppercase tracking-wider text-artesanal-piedra">
@@ -81,12 +81,12 @@ export function SelectorMargen({
               className={cn(
                 'relative flex flex-col items-center justify-center p-3 rounded-2xl border text-center transition-all duration-200 active:scale-95',
                 estaSeleccionado
-                  ? 'border-artesanal-verde-600 bg-artesanal-verde-100/70 text-artesanal-carbon shadow-sm ring-2 ring-artesanal-verde-500/20 dark:bg-artesanal-verde-950/80 dark:border-artesanal-verde-500'
-                  : 'border-artesanal-borde bg-artesanal-tarjeta hover:border-artesanal-verde-400 hover:bg-artesanal-verde-50/50 text-artesanal-piedra dark:hover:bg-artesanal-verde-950/30'
+                  ? 'border-artesanal-ambar-600 bg-artesanal-ambar-100/70 text-artesanal-carbon shadow-sm ring-2 ring-artesanal-ambar-500/20 dark:bg-artesanal-ambar-950/80 dark:border-artesanal-ambar-500'
+                  : 'border-artesanal-borde bg-artesanal-tarjeta hover:border-artesanal-ambar-400 hover:bg-artesanal-ambar-50/50 text-artesanal-piedra dark:hover:bg-artesanal-ambar-950/30'
               )}
             >
               {tramo.recomendado && (
-                <span className="absolute -top-2 rounded-full bg-artesanal-verde-600 px-2 py-0.5 text-[9px] font-bold text-white uppercase tracking-wider shadow-xs">
+                <span className="absolute -top-2 rounded-full bg-artesanal-ambar-600 px-2 py-0.5 text-[9px] font-bold text-white uppercase tracking-wider shadow-xs">
                   Recomendado
                 </span>
               )}
@@ -104,8 +104,8 @@ export function SelectorMargen({
         })}
       </div>
 
-      <div className="flex items-start gap-2 rounded-2xl bg-artesanal-verde-50/80 dark:bg-artesanal-verde-950/40 p-3 text-xs text-artesanal-verde-950 dark:text-artesanal-verde-200 border border-artesanal-verde-200/60 dark:border-artesanal-verde-900">
-        <Info className="h-4 w-4 shrink-0 text-artesanal-verde-700 dark:text-artesanal-verde-400 mt-0.5" />
+      <div className="flex items-start gap-2 rounded-2xl bg-artesanal-ambar-50/80 dark:bg-artesanal-ambar-950/40 p-3 text-xs text-artesanal-ambar-950 dark:text-artesanal-ambar-200 border border-artesanal-ambar-200/60 dark:border-artesanal-ambar-900">
+        <Info className="h-4 w-4 shrink-0 text-artesanal-ambar-700 dark:text-artesanal-ambar-400 mt-0.5" />
         <p>
           <strong>Cálculo Financiero Preciso:</strong> Usamos la fórmula real de margen sobre venta <em>[Precio = Costo / (1 - Margen%)]</em>. Un recargo simple del 50% solo te daría un 33% de ganancia real; con nuestra fórmula tu margen en Bolivia y LATAM es exacto y blindado.
         </p>

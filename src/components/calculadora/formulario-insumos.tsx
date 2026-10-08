@@ -44,7 +44,7 @@ export function FormularioInsumos({
         <CardHeader className="pb-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-verde-100 text-artesanal-verde-800 dark:bg-artesanal-verde-950/70 dark:text-artesanal-verde-300">
+              <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-ambar-100 text-artesanal-ambar-800 dark:bg-artesanal-ambar-950/70 dark:text-artesanal-ambar-300">
                 <Flame className="h-5 w-5" />
               </div>
               <div>
@@ -55,7 +55,7 @@ export function FormularioInsumos({
             <button
               type="button"
               onClick={() => setMostrarConversorVolumen(!mostrarConversorVolumen)}
-              className="text-xs font-medium text-artesanal-verde-700 dark:text-artesanal-verde-300 hover:underline decoration-dotted flex items-center gap-1"
+              className="text-xs font-medium text-artesanal-ambar-700 dark:text-artesanal-ambar-300 hover:underline decoration-dotted flex items-center gap-1"
             >
               <HelpCircle className="h-3.5 w-3.5" />
               {mostrarConversorVolumen ? 'Cerrar conversor' : '¿Solo sabes los ml del vaso?'}
@@ -64,8 +64,8 @@ export function FormularioInsumos({
         </CardHeader>
         <CardContent className="space-y-4">
           {mostrarConversorVolumen && (
-            <div className="rounded-2xl border border-artesanal-verde-200 bg-artesanal-verde-50/70 dark:bg-artesanal-verde-950/40 dark:border-artesanal-verde-900 p-4 space-y-2">
-              <p className="text-xs text-artesanal-verde-900 dark:text-artesanal-verde-200 font-medium">
+            <div className="rounded-2xl border border-artesanal-ambar-200 bg-artesanal-ambar-50/70 dark:bg-artesanal-ambar-950/40 dark:border-artesanal-ambar-900 p-4 space-y-2">
+              <p className="text-xs text-artesanal-ambar-900 dark:text-artesanal-ambar-200 font-medium">
                 La cera líquida tiene una densidad menor al agua (~0.86). Ingresa los ml de agua que caben en tu vaso:
               </p>
               <div className="flex gap-2">
@@ -80,7 +80,7 @@ export function FormularioInsumos({
                 <button
                   type="button"
                   onClick={manejarAplicarVolumen}
-                  className="rounded-2xl bg-artesanal-verde-600 px-4 py-2 text-xs font-bold text-white hover:bg-artesanal-verde-700 active:scale-95 transition-all shadow-xs"
+                  className="rounded-2xl bg-artesanal-ambar-600 px-4 py-2 text-xs font-bold text-white hover:bg-artesanal-ambar-700 active:scale-95 transition-all shadow-xs"
                 >
                   Convertir a Gramos (×0.86)
                 </button>
@@ -130,7 +130,7 @@ export function FormularioInsumos({
       <Card id="tutorial-esencia" className="border-artesanal-borde bg-artesanal-tarjeta backdrop-blur-sm">
         <CardHeader className="pb-4">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-verde-100 text-artesanal-verde-800 dark:bg-artesanal-verde-950/70 dark:text-artesanal-verde-300">
+            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-ambar-100 text-artesanal-ambar-800 dark:bg-artesanal-ambar-950/70 dark:text-artesanal-ambar-300">
               <Droplets className="h-5 w-5" />
             </div>
             <div>
@@ -178,7 +178,7 @@ export function FormularioInsumos({
                 <span className="text-xs font-semibold text-artesanal-carbon">
                   Carga de fragancia:
                 </span>
-                <span className="rounded-xl bg-artesanal-verde-100 px-2.5 py-0.5 text-artesanal-verde-900 dark:bg-artesanal-verde-950 dark:text-artesanal-verde-200 font-mono text-sm font-bold">
+                <span className="rounded-xl bg-artesanal-ambar-100 px-2.5 py-0.5 text-artesanal-ambar-900 dark:bg-artesanal-ambar-950 dark:text-artesanal-ambar-200 font-mono text-sm font-bold">
                   {insumos.porcentaje_esencia}%
                 </span>
               </div>
@@ -229,7 +229,7 @@ export function FormularioInsumos({
       <Card id="tutorial-envase" className="border-artesanal-borde bg-artesanal-tarjeta backdrop-blur-sm">
         <CardHeader className="pb-4">
           <div className="flex items-center gap-2.5">
-            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-verde-100 text-artesanal-verde-800 dark:bg-artesanal-verde-950/70 dark:text-artesanal-verde-300">
+            <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-ambar-100 text-artesanal-ambar-800 dark:bg-artesanal-ambar-950/70 dark:text-artesanal-ambar-300">
               <Package className="h-5 w-5" />
             </div>
             <div>

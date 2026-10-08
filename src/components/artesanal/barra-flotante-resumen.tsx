@@ -52,10 +52,10 @@ export function BarraFlotanteResumen({
         <div className="h-7 w-[1px] bg-artesanal-borde" />
 
         <div className="flex flex-col">
-          <span className="text-[10px] font-semibold uppercase tracking-wider text-artesanal-verde-700 dark:text-artesanal-verde-300">
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-artesanal-ambar-700 dark:text-artesanal-ambar-300">
             Ganancia ({margen}%)
           </span>
-          <div className="text-base font-bold text-artesanal-salvia">
+          <div className="text-base font-bold text-artesanal-ambar-600 dark:text-artesanal-ambar-400">
             <ContadorAnimado valor={gananciaNeta} moneda={monedaSimbolo} />
           </div>
         </div>

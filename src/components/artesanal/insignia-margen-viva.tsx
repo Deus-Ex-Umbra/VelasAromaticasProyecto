@@ -14,16 +14,16 @@ export function InsigniaMargenViva({ margen, className }: InsigniaMargenVivaProp
   let configuracion = {
     texto: 'Saludable / Mayorista',
     icono: ShieldCheck,
-    fondo: 'bg-emerald-50 text-emerald-800 border-emerald-300',
-    colorPunto: 'bg-emerald-500',
-    onda: 'bg-emerald-400',
+    fondo: 'bg-amber-100/90 text-amber-950 border-amber-300 dark:bg-amber-950/80 dark:text-amber-200 dark:border-amber-800',
+    colorPunto: 'bg-amber-500',
+    onda: 'bg-amber-400',
   };
 
   if (margen < 35) {
     configuracion = {
       texto: 'Riesgo de Pérdida (<35%)',
       icono: ShieldAlert,
-      fondo: 'bg-red-50 text-red-700 border-red-300',
+      fondo: 'bg-red-50 text-red-700 border-red-300 dark:bg-red-950/60 dark:text-red-300 dark:border-red-900',
       colorPunto: 'bg-red-500',
       onda: 'bg-red-400',
     };
@@ -31,17 +31,17 @@ export function InsigniaMargenViva({ margen, className }: InsigniaMargenVivaProp
     configuracion = {
       texto: 'Mínimo Viable (35-49%)',
       icono: TrendingUp,
-      fondo: 'bg-amber-50 text-amber-800 border-amber-300',
-      colorPunto: 'bg-amber-500',
-      onda: 'bg-amber-400',
+      fondo: 'bg-stone-100 text-stone-800 border-stone-300 dark:bg-stone-900 dark:text-stone-300 dark:border-stone-700',
+      colorPunto: 'bg-amber-600',
+      onda: 'bg-amber-500',
     };
   } else if (margen >= 70) {
     configuracion = {
       texto: 'Margen Premium (≥70%)',
       icono: Sparkles,
-      fondo: 'bg-yellow-50 text-yellow-900 border-yellow-300 shadow-[0_0_15px_rgba(245,158,11,0.2)]',
-      colorPunto: 'bg-amber-500',
-      onda: 'bg-amber-400',
+      fondo: 'bg-gradient-to-r from-amber-100 to-yellow-100 text-amber-950 border-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.25)] dark:from-amber-950/90 dark:to-yellow-950/90 dark:text-amber-100 dark:border-amber-700',
+      colorPunto: 'bg-amber-400',
+      onda: 'bg-amber-300',
     };
   }
 

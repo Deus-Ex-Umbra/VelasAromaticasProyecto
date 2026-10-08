@@ -36,11 +36,11 @@ export function SelectorMonedaLatam({
       <button
         type="button"
         onClick={() => setAbierto(!abierto)}
-        className="flex items-center gap-2 rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta px-3 py-1.5 text-xs font-semibold text-artesanal-carbon shadow-xs transition-all hover:bg-artesanal-verde-50 dark:hover:bg-artesanal-verde-950/40 active:scale-95"
+        className="flex items-center gap-2 rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta px-3 py-1.5 text-xs font-semibold text-artesanal-carbon shadow-xs transition-all hover:bg-artesanal-ambar-50 dark:hover:bg-artesanal-ambar-950/40 active:scale-95"
         title="Cambiar moneda de LATAM"
       >
         <BanderaPais codigo={monedaActual.codigoPais} ancho={20} alto={14} />
-        <span className="font-mono font-bold text-artesanal-salvia-oscuro dark:text-artesanal-verde-300">
+        <span className="font-mono font-bold text-artesanal-ambar-700 dark:text-artesanal-ambar-300">
           {monedaActual.simbolo}
         </span>
         <span className="hidden sm:inline text-artesanal-piedra">({monedaActual.codigo})</span>
@@ -67,15 +67,15 @@ export function SelectorMonedaLatam({
                   className={cn(
                     'flex w-full items-center justify-between px-3 py-2 text-xs rounded-xl font-medium transition-colors text-left',
                     estaSeleccionada
-                      ? 'bg-artesanal-verde-100 text-artesanal-verde-900 font-bold dark:bg-artesanal-verde-950/80 dark:text-artesanal-verde-200'
-                      : 'text-artesanal-carbon hover:bg-artesanal-verde-50 dark:hover:bg-artesanal-verde-950/40'
+                      ? 'bg-artesanal-ambar-100 text-artesanal-ambar-900 font-bold dark:bg-artesanal-ambar-950/80 dark:text-artesanal-ambar-200'
+                      : 'text-artesanal-carbon hover:bg-artesanal-ambar-50 dark:hover:bg-artesanal-ambar-950/40'
                   )}
                 >
                   <span className="flex items-center gap-2.5">
                     <BanderaPais codigo={item.codigoPais} ancho={20} alto={14} />
                     <span>{item.pais}</span>
                   </span>
-                  <span className="font-mono font-bold text-artesanal-salvia-oscuro dark:text-artesanal-verde-300 opacity-90">
+                  <span className="font-mono font-bold text-artesanal-ambar-700 dark:text-artesanal-ambar-300 opacity-90">
                     {item.simbolo}
                   </span>
                 </button>

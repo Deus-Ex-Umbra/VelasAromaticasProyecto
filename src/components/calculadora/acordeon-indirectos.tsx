@@ -36,7 +36,7 @@ export function AcordeonIndirectos({
         <AccordionItem value="indirectos" className="border-none">
           <AccordionTrigger className="hover:no-underline py-2 px-2">
             <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-verde-100 text-artesanal-verde-800 dark:bg-artesanal-verde-950/70 dark:text-artesanal-verde-300">
+              <div className="flex h-9 w-9 items-center justify-center rounded-2xl bg-artesanal-ambar-100 text-artesanal-ambar-800 dark:bg-artesanal-ambar-950/70 dark:text-artesanal-ambar-300">
                 <ShieldCheck className="h-5 w-5" />
               </div>
               <div className="text-left">
@@ -44,7 +44,7 @@ export function AcordeonIndirectos({
                   <h4 className="font-serif text-base sm:text-lg font-bold text-artesanal-carbon">
                     Costos Indirectos y Ocultos
                   </h4>
-                  <span className="rounded-full bg-artesanal-verde-100 px-2.5 py-0.5 text-[11px] font-semibold text-artesanal-verde-800 dark:bg-artesanal-verde-950 dark:text-artesanal-verde-200">
+                  <span className="rounded-full bg-artesanal-ambar-100 px-2.5 py-0.5 text-[11px] font-semibold text-artesanal-ambar-800 dark:bg-artesanal-ambar-950 dark:text-artesanal-ambar-200">
                     Cero Pérdidas
                   </span>
                 </div>
@@ -56,7 +56,7 @@ export function AcordeonIndirectos({
           </AccordionTrigger>
 
           <AccordionContent className="pt-4 px-2 space-y-4">
-            <p className="text-xs text-artesanal-piedra leading-relaxed bg-artesanal-verde-50/70 dark:bg-artesanal-verde-950/40 p-3 rounded-2xl border border-artesanal-verde-200/60 dark:border-artesanal-verde-900">
+            <p className="text-xs text-artesanal-piedra leading-relaxed bg-artesanal-ambar-50/70 dark:bg-artesanal-ambar-950/40 p-3 rounded-2xl border border-artesanal-ambar-200/60 dark:border-artesanal-ambar-900">
               💡 <strong>Regla de Oro en Cerería:</strong> Omitir el tiempo, la caja craft o la energía es la causa #1 de quiebra artesanal. Añádelos aquí para garantizar que tu beneficio sea 100% ganancia real.
             </p>
 

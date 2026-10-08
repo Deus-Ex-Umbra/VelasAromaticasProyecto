@@ -52,13 +52,13 @@ export function ControlPaso({
           {etiqueta}
         </span>
       )}
-      <div className="flex items-center rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta p-1 shadow-xs transition-all focus-within:ring-2 focus-within:ring-artesanal-verde-500/40 focus-within:border-artesanal-verde-500">
+      <div className="flex items-center rounded-2xl border border-artesanal-borde bg-artesanal-tarjeta p-1 shadow-xs transition-all focus-within:ring-2 focus-within:ring-artesanal-ambar-500/40 focus-within:border-artesanal-ambar-500">
         <motion.button
           type="button"
           onClick={decrementar}
           disabled={valor <= min}
           whileTap={{ scale: 0.88 }}
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-artesanal-verde-50 text-artesanal-verde-900 transition-colors hover:bg-artesanal-verde-100 disabled:opacity-30 disabled:pointer-events-none dark:bg-artesanal-verde-950/60 dark:text-artesanal-verde-200"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-artesanal-ambar-50 text-artesanal-ambar-900 transition-colors hover:bg-artesanal-ambar-100 disabled:opacity-30 disabled:pointer-events-none dark:bg-artesanal-ambar-950/60 dark:text-artesanal-ambar-200"
           aria-label="Disminuir cantidad"
         >
           <Minus className="h-4 w-4" />
@@ -87,7 +87,7 @@ export function ControlPaso({
           onClick={incrementar}
           disabled={valor >= max}
           whileTap={{ scale: 0.88 }}
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-artesanal-verde-50 text-artesanal-verde-900 transition-colors hover:bg-artesanal-verde-100 disabled:opacity-30 disabled:pointer-events-none dark:bg-artesanal-verde-950/60 dark:text-artesanal-verde-200"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-artesanal-ambar-50 text-artesanal-ambar-900 transition-colors hover:bg-artesanal-ambar-100 disabled:opacity-30 disabled:pointer-events-none dark:bg-artesanal-ambar-950/60 dark:text-artesanal-ambar-200"
           aria-label="Aumentar cantidad"
         >
           <Plus className="h-4 w-4" />

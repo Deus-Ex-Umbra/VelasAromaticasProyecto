@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --color-fondo: #F5F8F6;
+  --color-fondo: #FAF8F5;
   --color-tarjeta: #FFFFFF;
-  --color-borde: #E1EBE4;
-  --color-texto-principal: #111815;
-  --color-texto-secundario: #52665B;
+  --color-borde: #EFE7DC;
+  --color-texto-principal: #221A15;
+  --color-texto-secundario: #7E6F64;
   color-scheme: light;
 }
 
 .dark {
-  --color-fondo: #0B1310;
-  --color-tarjeta: #13201A;
-  --color-borde: #1E3128;
-  --color-texto-principal: #EEF4F0;
-  --color-texto-secundario: #8FA698;
+  --color-fondo: #14110E;
+  --color-tarjeta: #1E1814;
+  --color-borde: #332820;
+  --color-texto-principal: #FBF5EE;
+  --color-texto-secundario: #A8978A;
   color-scheme: dark;
 }
 
@@ -37,7 +37,7 @@
   }
 }
 
-/* Scrollbar estética artesanal botánica */
+/* Scrollbar estética artesanal de cera y llama */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -48,16 +48,16 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C4D6CB;
+  background: #E2D5C5;
   border-radius: 9999px;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: #253D32;
+  background: #3B2E24;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #10B981;
+  background: #D97706;
 }
 
 /* Driver.js Estilos Botánicos Artesanales */
@@ -103,14 +103,14 @@
 }
 
 .driver-popover-next-btn {
-  background-color: #059669 !important;
+  background-color: #D97706 !important;
   color: #ffffff !important;
   border: none !important;
   text-shadow: none !important;
 }
 
 .driver-popover-next-btn:hover {
-  background-color: #047857 !important;
+  background-color: #B45309 !important;
 }
 
 .driver-popover-prev-btn {

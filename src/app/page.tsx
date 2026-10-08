@@ -57,15 +57,15 @@ export default function PaginaPrincipal() {
 
   return (
     <main className="min-h-screen pb-24 md:pb-16 pt-6 sm:pt-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* CABECERA ARTESANAL BOTÁNICA */}
+      {/* CABECERA ARTESANAL DE VELAS Y CERA */}
       <header className="mb-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-artesanal-borde pb-6">
         <div>
           <div className="flex items-center gap-2 mb-1.5">
-            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-artesanal-verde-600 text-white shadow-sm">
+            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-artesanal-ambar-600 text-white shadow-sm">
               <Flame className="h-4 w-4" />
             </span>
-            <span className="text-xs font-bold uppercase tracking-widest text-artesanal-verde-700 dark:text-artesanal-verde-300">
-              Taller de Cerería Botánica • Bolivia & LATAM
+            <span className="text-xs font-bold uppercase tracking-widest text-artesanal-ambar-700 dark:text-artesanal-ambar-300">
+              Taller de Cerería Artesanal • Cera, Esencia & Llama
             </span>
           </div>
           <h1 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-extrabold text-artesanal-carbon tracking-tight">
@@ -95,7 +95,7 @@ export default function PaginaPrincipal() {
             type="button"
             onClick={restablecerValoresPorDefecto}
             title="Limpiar todos los campos"
-            className="flex items-center gap-1.5 rounded-full border border-artesanal-borde bg-artesanal-tarjeta px-3 py-1.5 text-xs font-semibold text-artesanal-piedra hover:text-artesanal-carbon hover:border-artesanal-verde-500 shadow-xs transition-colors"
+            className="flex items-center gap-1.5 rounded-full border border-artesanal-borde bg-artesanal-tarjeta px-3 py-1.5 text-xs font-semibold text-artesanal-piedra hover:text-artesanal-carbon hover:border-artesanal-ambar-500 shadow-xs transition-colors"
           >
             <RotateCcw className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Limpiar</span>
@@ -147,7 +147,7 @@ export default function PaginaPrincipal() {
           />
 
           {esLote && (
-            <div className="rounded-2xl bg-artesanal-verde-50/70 dark:bg-artesanal-verde-950/40 border border-artesanal-verde-200/70 dark:border-artesanal-verde-900 p-3.5 space-y-1">
+            <div className="rounded-2xl bg-artesanal-ambar-50/70 dark:bg-artesanal-ambar-950/40 border border-artesanal-ambar-200/70 dark:border-artesanal-ambar-900 p-3.5 space-y-1">
               <ControlPaso
                 etiqueta="Cantidad de velas a producir en este lote"
                 valor={configuracion.cantidad_lote}
@@ -164,9 +164,9 @@ export default function PaginaPrincipal() {
 
           {/* TARJETA SPOTLIGHT CON REFLECTOR DE CURSOR (Cult UI) */}
           <TarjetaSpotlight id="tutorial-resultados" className="relative">
-            {/* Si el margen es saludable (>=50%), añade Borde Luminoso Cult UI */}
+            {/* Si el margen es saludable (>=50%), añade Borde Luminoso de Llama Cálida */}
             {configuracion.margen_beneficio_porcentaje >= 50 && (
-              <BordeLuminoso duracion={10} colorDesde="#10B981" colorHasta="#86EFAC" />
+              <BordeLuminoso duracion={8} colorDesde="#F59E0B" colorHasta="#FCD34D" />
             )}
 
             <div className="space-y-6">
@@ -174,7 +174,7 @@ export default function PaginaPrincipal() {
               <div>
                 <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-artesanal-piedra mb-1">
                   <span>{esLote ? `Precio Sugerido del Lote (${configuracion.cantidad_lote}u)` : 'Precio de Venta Sugerido'}</span>
-                  <span className="rounded-full bg-artesanal-verde-100 text-artesanal-verde-900 dark:bg-artesanal-verde-950 dark:text-artesanal-verde-200 px-2.5 py-0.5 font-bold">
+                  <span className="rounded-full bg-artesanal-ambar-100 text-artesanal-ambar-900 dark:bg-artesanal-ambar-950 dark:text-artesanal-ambar-200 px-2.5 py-0.5 font-bold">
                     Margen {configuracion.margen_beneficio_porcentaje}%
                   </span>
                 </div>
@@ -191,15 +191,15 @@ export default function PaginaPrincipal() {
 
               {/* Métricas clave en cuadrícula */}
               <div className="grid grid-cols-2 gap-3 pt-3 border-t border-artesanal-borde">
-                <div className="rounded-2xl bg-artesanal-verde-50/80 dark:bg-artesanal-verde-950/50 p-3.5 border border-artesanal-verde-200 dark:border-artesanal-verde-900">
-                  <div className="flex items-center gap-1.5 text-xs font-semibold text-artesanal-verde-800 dark:text-artesanal-verde-300 uppercase tracking-wider">
+                <div className="rounded-2xl bg-artesanal-ambar-50/80 dark:bg-artesanal-ambar-950/50 p-3.5 border border-artesanal-ambar-200 dark:border-artesanal-ambar-900">
+                  <div className="flex items-center gap-1.5 text-xs font-semibold text-artesanal-ambar-800 dark:text-artesanal-ambar-300 uppercase tracking-wider">
                     <TrendingUp className="h-3.5 w-3.5" />
                     <span>Ganancia Neta</span>
                   </div>
-                  <div className="mt-1 font-mono text-xl sm:text-2xl font-black text-artesanal-verde-700 dark:text-artesanal-verde-300">
+                  <div className="mt-1 font-mono text-xl sm:text-2xl font-black text-artesanal-ambar-700 dark:text-artesanal-ambar-300">
                     <ContadorAnimado valor={gananciaMostrada} moneda={moneda.simbolo} />
                   </div>
-                  <span className="text-[10px] text-artesanal-verde-600 dark:text-artesanal-verde-400 font-medium">
+                  <span className="text-[10px] text-artesanal-ambar-700 dark:text-artesanal-ambar-400 font-medium">
                     {esLote ? 'Líquido por el lote' : 'Líquido por cada vela'}
                   </span>
                 </div>
