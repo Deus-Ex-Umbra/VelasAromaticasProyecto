@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-fondo: #F5F8F6;
+  --color-tarjeta: #FFFFFF;
+  --color-borde: #E1EBE4;
+  --color-texto-principal: #111815;
+  --color-texto-secundario: #52665B;
+  color-scheme: light;
+}
+
+.dark {
+  --color-fondo: #0B1310;
+  --color-tarjeta: #13201A;
+  --color-borde: #1E3128;
+  --color-texto-principal: #EEF4F0;
+  --color-texto-secundario: #8FA698;
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto-principal);
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Scrollbar estética artesanal botánica */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4D6CB;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #253D32;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
+
+/* Driver.js Estilos Botánicos Artesanales */
+.driver-popover {
+  background-color: var(--color-tarjeta) !important;
+  color: var(--color-texto-principal) !important;
+  border: 1px solid var(--color-borde) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.25) !important;
+  padding: 1.25rem !important;
+  max-width: 340px !important;
+}
+
+.driver-popover-title {
+  font-family: ui-serif, Georgia, Cambria, serif !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  color: var(--color-texto-principal) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.driver-popover-description {
+  font-size: 0.825rem !important;
+  line-height: 1.5 !important;
+  color: var(--color-texto-secundario) !important;
+  margin-bottom: 1rem !important;
+}
+
+.driver-popover-progress-text {
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: var(--color-texto-secundario) !important;
+}
+
+.driver-popover-next-btn,
+.driver-popover-prev-btn,
+.driver-popover-close-btn {
+  border-radius: 0.75rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  padding: 0.4rem 0.8rem !important;
+  transition: all 0.2s ease !important;
+}
+
+.driver-popover-next-btn {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border: none !important;
+  text-shadow: none !important;
+}
+
+.driver-popover-next-btn:hover {
+  background-color: #047857 !important;
+}
+
+.driver-popover-prev-btn {
+  background-color: transparent !important;
+  color: var(--color-texto-secundario) !important;
+  border: 1px solid var(--color-borde) !important;
+}
+
+.driver-popover-arrow-side-left.driver-popover-arrow {
+  border-left-color: var(--color-tarjeta) !important;
+}
+.driver-popover-arrow-side-right.driver-popover-arrow {
+  border-right-color: var(--color-tarjeta) !important;
+}
+.driver-popover-arrow-side-top.driver-popover-arrow {
+  border-top-color: var(--color-tarjeta) !important;
+}
+.driver-popover-arrow-side-bottom.driver-popover-arrow {
+  border-bottom-color: var(--color-tarjeta) !important;
+}
